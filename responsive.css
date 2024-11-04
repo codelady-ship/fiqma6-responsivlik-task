@@ -1,1 +1,237 @@
-@media(){}
+@media (max-width:992px){
+    nav .links{
+        margin-left: 19.5rem;}
+
+    main{
+        padding-left: 2.6rem;
+        }
+    
+    .photo img{
+        width: 12.5rem;
+        height: 10rem;
+        margin-right: 0.2rem;
+        margin-bottom: 0.2rem;
+    }
+    .photos .ox1{
+        position: absolute;
+        top: 3rem;
+        left: -1.3rem;
+    }
+    .photos .ox2{
+        position: absolute;
+        top: 3rem;
+        right: 1.7rem;
+    }
+    .photos .ox1,.photos .ox2{
+        width: 1rem;
+    }  
+    .page2 .left{
+        height: 46rem;
+        margin-left: 0rem;
+        padding-top: 2rem;
+    }
+    .right .B{
+        width: 18rem;
+       
+    }
+    .page2 .right{
+        margin-left: -2rem;
+        margin-top: -3rem;
+        gap: 0rem;    
+    } 
+    .subtitle{
+        margin: 2rem 0rem;
+         
+    }
+    table{
+        margin-left: 0rem;
+    }
+    .cedvel2,.cedvel3{
+        margin-left: 0;
+    }
+    .cedvel2 td,.cedvel3 td{
+        width: 10rem;
+    }
+    .page5{display: flex;
+        padding: 2rem 0;
+        gap: 0;
+        }
+       
+    .AA,.AB{
+        width: 15rem;
+        margin: 2rem;
+    }
+    .icons a img{
+        margin-top: 1rem;
+        margin-left: 0rem;
+        border-radius: 10%;
+        padding: 2%;
+        width: 2rem;
+        height: 2rem;
+    } 
+
+}
+    
+
+@media (max-width:768px){
+     nav .links{
+        margin-left: 8rem;}
+
+    main{
+        padding-left: 1.5rem;
+        }
+    
+    .photo img{
+        width: 9.5rem;
+        height: 8rem;
+        margin-right: 0.2rem;
+        margin-bottom: 0.2rem;
+    }
+    .photos .ox1{
+        position: absolute;
+        top: 3rem;
+        left: -1.3rem;
+    }
+    .photos .ox2{
+        position: absolute;
+        top: 3rem;
+        right: 1.7rem;
+    }
+    .photos .ox1,.photos .ox2{
+        width: 1rem;
+    }  
+    .page2 .left{
+        height: 51rem;
+        margin-left: 0rem;
+        padding-top: 2rem;
+    }
+    .right .B{
+        width: 12rem;
+       
+    }
+    .page2 .right{
+        margin-left: -2rem;
+        margin-top: -3rem;
+        gap: 0rem;    
+    }
+    .subtitle{
+        margin: 2rem 0rem;
+         
+    }
+    table{
+        margin-left: 0rem;
+    }
+    .cedvel2,.cedvel3{
+        margin-left: 0;
+    }
+    .cedvel2 td,.cedvel3 td{
+        width: 10rem;
+    }
+    .page5{display: flex;
+        padding: 2rem 0;
+        gap: 0;
+        }
+       
+    .AA,.AB{
+        width: 15rem;
+        margin: 2rem;
+    }
+    .icons a img{
+        margin-top: 1rem;
+        margin-left: 0rem;
+        border-radius: 10%;
+        padding: 2%;
+        width: 2rem;
+        height: 2rem;
+    } 
+}
+
+
+@media (max-width:500px){
+    header{
+        height: 600px;
+    }
+    nav .links{display: none;}
+
+    .bars{display: block;
+    padding-left:20rem;}
+
+    .logo img{
+        width: 4.5rem;
+       }
+    main{
+        padding-left: 2rem;
+        }
+    .photo img{
+        width: 12rem;
+        height: 8rem;
+        margin-right: -0.2rem;
+        margin-bottom: -0.2rem;
+    }
+    .photos {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .photos .ox1{
+        position: absolute;
+        top: 3rem;
+        left: -1.3rem;
+    }
+    .photos .ox2{
+        position: absolute;
+        top: 12rem;
+        right: 1.7rem;
+    }
+    .photos .ox1,.photos .ox2{
+        width: 1rem;
+    }   
+    .page2 {display: inline;}
+    .page2 .left{
+        width: 25rem;
+        height: 40rem;
+        margin-left: 2rem;
+        padding-top: 2rem;
+    }
+    .right .B{
+        width: 11.5rem;
+       
+    }
+    .page2 .right{
+        margin-left: -2rem;
+        margin-top: 1rem;
+        gap: 0rem;    
+    }
+    .subtitle{
+        margin: 2rem 0rem;
+         
+    }
+    table{
+        margin-left: 0rem;
+    }
+    .cedvel2,.cedvel3{
+        margin-left: 0;
+    }
+    
+    .page5{display:block;
+        }
+       
+    .AA,.AB{
+        width: 15rem;
+        margin: 2rem;
+    }
+    .icons a img{
+        margin-top: 1rem;
+        margin-left: 0rem;
+        border-radius: 10%;
+         padding: 2%;
+         width: 2rem;
+        height: 2rem;
+    }
+}
+
+  
+
+
+
+
+
