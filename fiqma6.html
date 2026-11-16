@@ -1,300 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fiqma6</title>
+    <title>Profil SMP Negeri 1 Cibadak | Responsive Figma Practice</title>
+    <meta name="description" content="Responsive school profile page for SMP Negeri 1 Cibadak, built with HTML, CSS and JavaScript from a Figma design as a practice task.">
+    <link rel="canonical" href="https://codelady-ship.github.io/fiqma6-responsivlik-task/fiqma6.html">
+    <link rel="icon" href="./foto/logo.png" type="image/png">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Profil SMP Negeri 1 Cibadak (responsive practice)">
+    <meta property="og:description" content="Responsive HTML/CSS school profile page built from a Figma design.">
+    <meta property="og:url" content="https://codelady-ship.github.io/fiqma6-responsivlik-task/fiqma6.html">
+    <meta property="og:image" content="https://codelady-ship.github.io/fiqma6-responsivlik-task/docs/screenshot.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Profil SMP Negeri 1 Cibadak (responsive practice)">
+    <meta name="twitter:description" content="Responsive HTML/CSS school profile page built from a Figma design.">
+    <meta name="twitter:image" content="https://codelady-ship.github.io/fiqma6-responsivlik-task/docs/screenshot.png">
+    <link rel="preload" href="./font-family/static/OpenSans-Regular.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="stylesheet" href="./fiqma6.css">
     <link rel="stylesheet" href="./responsive.css">
 </head>
 <body>
-    <div class="container">
-      <header>
-        <nav>
-            <div class="logo"><img src="./foto/logo.png" alt="logo"></div>
-            <div class="links">
-                <a href="#">HOME</a>
-                <a href="#">About</a>
-                <a href="#">Guru</a>
-                <a href="#">Siswa</a>
-                <a href="#">Pendaftran</a>
-                <a href="#">Lainsa</a>
-                <a href="#">Kontakt</a>
+    <div class="container" id="top">
+        <header>
+            <nav aria-label="Menu utama">
+                <a class="logo" href="#top"><img src="./foto/logo.png" alt="Logo SMP Negeri 1 Cibadak" width="65" height="80"></a>
+                <button class="bars" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="main-links">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path></svg>
+                </button>
+                <div class="links" id="main-links">
+                    <a href="#top">Home</a>
+                    <a href="#profil">Profil</a>
+                    <a href="#galeri">Galeri</a>
+                    <a href="#siswa">Siswa</a>
+                    <a href="#guru">Guru</a>
+                    <a href="#kontak">Kontak</a>
+                </div>
+            </nav>
+            <div class="hero" id="galeri">
+                <h1>Profil SMP Negeri 1 Cibadak</h1>
+                <div class="gallery">
+                    <button class="arrow prev" type="button" aria-label="Foto sebelumnya"><img src="./foto/oxsola.png" alt="" width="40" height="40"></button>
+                    <div class="photos" id="photo-track">
+                        <figure class="photo"><img src="./foto/page1-1.webp" alt="Ruang kelas dengan deretan meja dan kursi" width="700" height="468">
+                            <figcaption>Sekolah</figcaption></figure>
+                        <figure class="photo"><img src="./foto/page1-2.webp" alt="Siswa duduk dan makan di kantin" width="700" height="446">
+                            <figcaption>Kantin</figcaption></figure>
+                        <figure class="photo"><img src="./foto/page1-3.webp" alt="Gedung sekolah bertingkat dengan banyak jendela" width="800" height="480">
+                            <figcaption>Cibadak</figcaption></figure>
+                        <figure class="photo"><img src="./foto/page1-4.webp" alt="Halaman sekolah dengan pepohonan dan tempat duduk" width="800" height="600">
+                            <figcaption>Halaman</figcaption></figure>
+                    </div>
+                    <button class="arrow next" type="button" aria-label="Foto berikutnya"><img src="./foto/oxsaga.png" alt="" width="40" height="40"></button>
+                </div>
             </div>
-            <div class="bars">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path></svg>
-              </div>
-        </nav>
-        <main>
-            <h2>Profile SMP Negeri  1 Cibadak</h2>
-            <div class="photos">
-                <div class="ox1"><img src="./foto/oxsola.png" alt="ox sola"></div>
-             <div class="photo"><img src="./foto/page1-1.png" alt="">Sekolah</div>
-             <div class="photo"><img src="./foto/page1-2.png" alt="">Kantin</div>
-             <div class="photo"><img src="./foto/page1-3.png" alt="">Cibadak</div>
-             <div class="photo"><img src="./foto/page1-4.png" alt="">Halaman</div>
-             <div class="ox2"><img src="./foto/oxsaga.png" alt="ox saga"></div>
-            </div>
-        </main>
-       </header>
-       <!--page1 sonu -->
-       <h2 class="title">SMP Negeri 1 Cibadak</h2>
-        <div class="page2">
-         <div class="left">
-            <div class="A">
-                <img src="./foto/page2.png" alt="page2">
-                <h2>Nama Sekolah</h2>
-                <p>SMP Negeri 1 Cibadak	</p>
-                <h2>Nama Kepala Sekolah</h2>
-                <p> Drs Ossad</p>
-            </div>
-            <div class="A">
-                <img src="./foto/page2.png" alt="page2">
-                <h2>Webite/Email</h2>
-                <p>smpn1cibadak.sch.id / smpn1cbd_kabsi@yahoo.com</p>
-                <h2>No. Telp</h2>
-                <p>(0266) 531333</p>
-            </div>
-            <div class="A">
-                <img src="./foto/page2.png" alt="page2">
-                <h2>Alamat</h2>
-                <p>Jl. Siliwangi No. 123 Cibadak
-                     Sukabumi - Jawa barat
-                             43351</p>
-            </div>
-         </div>
-         <div class="right">
-            <div class="box">
-          <div class="B">
-            <img src="./foto/page2.png" alt="">
-            <h2>No. Pendirian Sekolah</h2>
-            <h2>No. Sertifikat</h2> 
-            <p>421 / 997 / 2005</p>
-          </div>
-          <div class="B">
-            <img src="./foto/page2.png" alt="">
-            <h2>No. Statistik Sekolah</h2>
-            <p>20 1 02 06 10 008</p>
-            <h2>NIS</h2>
-            <p>200080</p>
-          </div>
-          <div class="B">
-           <img src="./foto/page2.png" alt="">
-           <h2>No. Pendirian Sekolah</h2>
-           <h2>No. Sertifikat</h2> 
-           <p>421 / 997 / 2005</p>
-          </div>
-        </div><!--rightda 2hisse sonu -->
-        <div class="box">
-          <div class="B">
-            <img src="./foto/page2.png" alt="">
-            <h2>No. Pendirian Sekolah</h2>
-            <h2>No. Sertifikat</h2> 
-            <p>421 / 997 / 2005</p>
-          </div>
-          <div class="B">
-            <img src="./foto/page2.png" alt="">
-            <h2>No. Statistik Sekolah</h2>
-            <p>20 1 02 06 10 008</p>
-            <h2>NIS</h2>
-            <p>200080</p>
-          </div>
-          <div class="B">
-           <img src="./foto/page2.png" alt="">
-           <h2>No. Pendirian Sekolah</h2>
-           <h2>No. Sertifikat</h2> 
-           <p>421 / 997 / 2005</p>
-          </div>
-         </div> <!--rightda 2hisse sonu -->
-         </div>
-        </div>
-        <!--page2 sonu -->
-        <h2 class="subtitle">Jumlah Siswa </h2>
-         <div class="cedvel">
-            <div>
-          <table>
-           <tr><th >Tahun 2019 / 2020</th></tr>
-           <tr></table>
-            <table>
-           <td>Kelas VII</td>
-           <td>Jumlah Rumbel</td>
-           <td>Kelas VIII</td>
-           <td>Jumlah Rumbel</td>
-           <td>Kelas VIII</td>
-           <td>Jumlah Rumbel</td>
-           <td>Kelas VIII</td>
-           <td>Jumlah Rumbel</td></tr>
-           <tr class="L"><td>L</td>
-            <td>P</td>
-            <td></td>
-            <td>L</td>
-            <td>P</td>
-            <td></td>
-            <td>L</td>
-            <td>P</td>
-            </tr> 
-            <tr><td>140</td>
-            <td>196</td>
-            <td>8</td>
-            <td>140</td>
-            <td>196</td>
-            <td>8</td>
-            <td>140</td>
-            <td>196</td>
-            </tr>
-            </table>
-         </div>
-         
-            <div>
-          <table>
-           <tr><th >Tahun 2019 / 2020</th></tr>
-           <tr></table>
-            <table>
-           <td>Kelas VII</td>
-           <td>Jumlah Rumbel</td>
-           <td>Kelas VIII</td>
-           <td>Jumlah Rumbel</td>
-           <td>Kelas VIII</td>
-           <td>Jumlah Rumbel</td>
-           <td>Kelas VIII</td>
-           <td>Jumlah Rumbel</td></tr>
-           <tr class="L"><td>L</td>
-            <td>P</td>
-            <td></td>
-            <td>L</td>
-            <td>P</td>
-            <td></td>
-            <td>L</td>
-            <td>P</td>
-            </tr> 
-            <tr><td>140</td>
-            <td>196</td>
-            <td>8</td>
-            <td>140</td>
-            <td>196</td>
-            <td>8</td>
-            <td>140</td>
-            <td>196</td>
-            </tr>
-            </table>
-         </div>
-         
-            <div>
-          <table>
-           <tr><th >Tahun 2019 / 2020</th></tr>
-           <tr></table>
-            <table>
-           <td>Kelas VII</td>
-           <td>Jumlah Rumbel</td>
-           <td>Kelas VIII</td>
-           <td>Jumlah Rumbel</td>
-           <td>Kelas VIII</td>
-           <td>Jumlah Rumbel</td>
-           <td>Kelas VIII</td>
-           <td>Jumlah Rumbel</td></tr>
-           <tr class="L"><td>L</td>
-            <td>P</td>
-            <td></td>
-            <td>L</td>
-            <td>P</td>
-            <td></td>
-            <td>L</td>
-            <td>P</td>
-            </tr> 
-            <tr><td>140</td>
-            <td>196</td>
-            <td>8</td>
-            <td>140</td>
-            <td>196</td>
-            <td>8</td>
-            <td>140</td>
-            <td>196</td>
-            </tr>
-            </table>
-         </div>
-         </div>
-         <!--page3 sonu -->
-        <h2 class="subtitle">Data Tenaga Pendidik dan Kependidikan</h2>
-       <table class="cedvel2">
-            <td>No.</td> 
-            <td>Keterangan</td>
-            <td>Jumlah Guru / Staf</td> 
-            <td>Smp Negeri</td>
-            <td>S-1</td>
-            <td>S-2</td>
-            <td>Yang sedang menempuh S-1</td>
-         </table>
-         <table class="cedvel3">
-           <tr>
-            <td>1</td>
-            <td>Guru PNS</td>
-            <td>32</td>
-            <td>23</td>
-            <td>8</td>
-            <td></td>
-            <td>1 Orang D-1</td>
-           </tr>
-           <tr class="setir">
-            <td>2</td>
-            <td>Guru Non PNS</td>
-            <td>5</td>
-            <td>5</td>
-            <td></td>
-            <td></td>
-            <td></td>
-           </tr>
-           <tr>
-            <td>3</td>
-            <td>Guru PNS DPK</td>
-            <td>2</td>
-            <td>1</td>
-            <td>1</td>
-            <td></td>
-            <td></td>
-           </tr>
-           <tr class="setir">
-            <td >4</td>
-            <td>Staf TU PNS</td>
-            <td>4</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-           </tr>
-         </table>
-       <!--page4 sonu -->
-       
-       <div class="page5">
-        <div class="AA">
-         <img class="img" src="./foto/logo.png" alt="logo">
-         <p> <b>Jl. Siliwangi No 123, Cibadak, Cibadak, Sukabumi,</b><br>
-           Jawa Barat 43351, Indonesia, (0266)531333</p>
-           <p>info@smpn1cibadak.sch.id</p>
-           <p>smpn1cbd_kabsi@yahoo.co.id</p>
-        </div>
-        <div class="AA"> 
-         <p> <b>Jelajah</b>
-           Sambutan
-           Profil Sekolah
-           Berita
-           Galeri</p>
-        </div>
-        <div class="AA">
-         <p><b>Halaman Umum</b>
-           Data Guru
-           PPDB SMPN 1 Cibadak
-           Panduan PPDB
-           Lokasi
-           Kontak</p>
-        </div>
-        <div class="AB">
-         <b> Media Sosial </b>
-          <div class="icons">
-          <a href="#"><img src="./foto/Icon Facebook.png" alt="fb"> </a> 
-          <a href="#"><img src="./foto/Twitter.png" alt="tvitter"></a></div>
-        </div>
-      </div> 
+        </header>
 
-    </div>  <!--container sonu -->
+        <main>
+            <section id="profil" aria-labelledby="profil-title">
+                <h2 class="title" id="profil-title">SMP Negeri 1 Cibadak</h2>
+                <div class="page2">
+                    <div class="left">
+                        <div class="A">
+                            <img src="./foto/page2.png" alt="" width="110" height="110">
+                            <h3>Nama Sekolah</h3>
+                            <p>SMP Negeri 1 Cibadak</p>
+                            <h3>Nama Kepala Sekolah</h3>
+                            <p>Drs Ossad</p>
+                        </div>
+                        <div class="A">
+                            <img src="./foto/page2.png" alt="" width="110" height="110">
+                            <h3>Website / Email</h3>
+                            <p>smpn1cibadak.sch.id<br>smpn1cbd_kabsi@yahoo.com</p>
+                            <h3>No. Telp</h3>
+                            <p>(0266) 531333</p>
+                        </div>
+                        <div class="A">
+                            <img src="./foto/page2.png" alt="" width="110" height="110">
+                            <h3>Alamat</h3>
+                            <p>Jl. Siliwangi No. 123 Cibadak, Sukabumi - Jawa Barat 43351</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="B">
+                            <img src="./foto/page2.png" alt="" width="110" height="110">
+                            <h3>No. Pendirian Sekolah</h3>
+                            <p>421 / 997 / 2005</p>
+                        </div>
+                        <div class="B">
+                            <img src="./foto/page2.png" alt="" width="110" height="110">
+                            <h3>No. Statistik Sekolah</h3>
+                            <p>20 1 02 06 10 008</p>
+                        </div>
+                        <div class="B">
+                            <img src="./foto/page2.png" alt="" width="110" height="110">
+                            <h3>NIS</h3>
+                            <p>200080</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="siswa" aria-labelledby="siswa-title">
+                <h2 class="subtitle" id="siswa-title">Jumlah Siswa</h2>
+                <div class="table-wrap" tabindex="0" role="region" aria-labelledby="siswa-title">
+                    <table class="cedvel">
+                        <caption>Jumlah siswa per kelas, tahun ajaran 2019 / 2020 (L = laki-laki, P = perempuan)</caption>
+                        <thead>
+                            <tr><th colspan="9" scope="colgroup" class="year">Tahun 2019 / 2020</th></tr>
+                            <tr>
+                                <th colspan="2" scope="colgroup">Kelas VII</th>
+                                <th rowspan="2" scope="col">Jumlah Rombel</th>
+                                <th colspan="2" scope="colgroup">Kelas VIII</th>
+                                <th rowspan="2" scope="col">Jumlah Rombel</th>
+                                <th colspan="2" scope="colgroup">Kelas IX</th>
+                                <th rowspan="2" scope="col">Jumlah Rombel</th>
+                            </tr>
+                            <tr class="L">
+                                <th scope="col">L</th><th scope="col">P</th>
+                                <th scope="col">L</th><th scope="col">P</th>
+                                <th scope="col">L</th><th scope="col">P</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>140</td><td>196</td><td>8</td>
+                                <td>140</td><td>196</td><td>8</td>
+                                <td>140</td><td>196</td><td>8</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="guru" aria-labelledby="guru-title">
+                <h2 class="subtitle" id="guru-title">Data Tenaga Pendidik dan Kependidikan</h2>
+                <div class="table-wrap" tabindex="0" role="region" aria-labelledby="guru-title">
+                    <table class="cedvel2">
+                        <caption>Jumlah guru dan staf menurut pendidikan terakhir</caption>
+                        <thead>
+                            <tr>
+                                <th rowspan="2" scope="col">No.</th>
+                                <th rowspan="2" scope="col">Keterangan</th>
+                                <th rowspan="2" scope="col">Jumlah Guru / Staf</th>
+                                <th colspan="3" scope="colgroup">Pendidikan</th>
+                            </tr>
+                            <tr>
+                                <th scope="col">S-1</th>
+                                <th scope="col">S-2</th>
+                                <th scope="col">Yang sedang menempuh S-1</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td>Guru PNS</td><td>32</td><td>23</td><td>8</td><td>1 orang (D-1)</td></tr>
+                            <tr class="setir"><td>2</td><td>Guru Non PNS</td><td>5</td><td>5</td><td>–</td><td>–</td></tr>
+                            <tr><td>3</td><td>Guru PNS DPK</td><td>2</td><td>1</td><td>1</td><td>–</td></tr>
+                            <tr class="setir"><td>4</td><td>Staf TU PNS</td><td>4</td><td>–</td><td>–</td><td>–</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+
+        <footer class="page5" id="kontak">
+            <div class="AA">
+                <img class="img" src="./foto/logo.png" alt="Logo SMP Negeri 1 Cibadak" width="65" height="80">
+                <address>
+                    <b>Jl. Siliwangi No 123, Cibadak, Sukabumi,</b><br>
+                    Jawa Barat 43351, Indonesia<br>
+                    (0266) 531333<br>
+                    info@smpn1cibadak.sch.id<br>
+                    smpn1cbd_kabsi@yahoo.co.id
+                </address>
+            </div>
+            <div class="AA">
+                <h2>Jelajah</h2>
+                <ul>
+                    <li><a href="#top">Sambutan</a></li>
+                    <li><a href="#profil">Profil Sekolah</a></li>
+                    <li><a href="#galeri">Galeri</a></li>
+                </ul>
+            </div>
+            <div class="AA">
+                <h2>Halaman Umum</h2>
+                <ul>
+                    <li><a href="#guru">Data Guru</a></li>
+                    <li><a href="#siswa">Jumlah Siswa</a></li>
+                    <li><a href="#kontak">Lokasi &amp; Kontak</a></li>
+                </ul>
+            </div>
+            <div class="AB">
+                <h2>Media Sosial</h2>
+                <div class="icons" aria-hidden="true">
+                    <span><img src="./foto/facebook.png" alt="" width="6" height="11"></span>
+                    <span><img src="./foto/twitter.png" alt="" width="13" height="10"></span>
+                </div>
+            </div>
+            <p class="note">Latihan responsif dari desain Figma (HTML, CSS, JS). Bukan situs resmi sekolah. · Responsive practice from a Figma design, not the school's official website. · <a href="https://github.com/codelady-ship/fiqma6-responsivlik-task">Source code</a></p>
+        </footer>
+    </div>
+    <script src="./fiqma6.js"></script>
 </body>
 </html>
