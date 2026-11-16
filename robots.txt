@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://codelady-ship.github.io/fiqma6-responsivlik-task/sitemap.xml
